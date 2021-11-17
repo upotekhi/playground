@@ -24,16 +24,18 @@
                 formControlName="email"
                 placeholder="Email"
                 class="form-control form-control-lg"
-                type="text" />
+                type="text" 
+                data-cy="email" />
             </fieldset>
             <fieldset class="form-group">
               <input
                 formControlName="password"
                 placeholder="Password"
                 class="form-control form-control-lg"
-                type="password" />
+                type="password" 
+                data-cy="password" />
             </fieldset>
-            <button class="btn btn-lg btn-primary pull-xs-right" [disabled]="!authForm.valid" type="submit">
+            <button class="btn btn-lg btn-primary pull-xs-right" [disabled]="!authForm.valid" type="submit" data-cy="submit">
               {{ title }}
             </button>
           </fieldset>

@@ -63,7 +63,8 @@
       <li class="nav-item">
         <a class="nav-link"
           [routerLink]="['/profile', currentUser.username]"
-          routerLinkActive="active">
+          routerLinkActive="active"
+          data-cy="profile">
           <img [src]="currentUser.image || 'https://static.productionready.io/images/smiley-cyrus.jpg'" *ngIf="currentUser.image" class="user-pic" alt="user image" />
           {{ currentUser.username }}
         </a>
