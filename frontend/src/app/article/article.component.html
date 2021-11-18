@@ -14,7 +14,8 @@
 
           <button class="btn btn-sm btn-outline-danger"
             [ngClass]="{disabled: isDeleting}"
-            (click)="deleteArticle()">
+            (click)="deleteArticle()"
+            data-cy="delete-banner">
             <i class="ion-trash-a"></i> Delete Article
           </button>
         </span>
@@ -66,7 +67,8 @@
 
           <button class="btn btn-sm btn-outline-danger"
             [ngClass]="{disabled: isDeleting}"
-            (click)="deleteArticle()">
+            (click)="deleteArticle()"
+            data-cy="delete-page">
             <i class="ion-trash-a"></i> Delete Article
           </button>
         </span>

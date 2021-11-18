@@ -10,7 +10,7 @@ describe("New Article page", () => {
     cy.visit("/editor");
   });
 
-  it("Publish Article test", () => {
+  it("Publish Article positive test", () => {
     cy.get("[data-cy=title]").type(title);
     cy.get("[data-cy=description]").type(description);
     cy.get("[data-cy=body]").type(body);
@@ -20,5 +20,29 @@ describe("New Article page", () => {
     cy.get("[data-cy=body] > p").should("have.text", body);
 
     cy.deleteArticle();
+  });
+
+  it("Publish Article negative test without title", () => {
+    cy.get("[data-cy=description]").type(description);
+    cy.get("[data-cy=body]").type(body);
+    cy.get("[data-cy=submit]").click();
+
+    cy.url().should("include", "/editor");
+  });
+
+  it("Publish Article negative test without description", () => {
+    cy.get("[data-cy=title]").type(title);
+    cy.get("[data-cy=body]").type(body);
+    cy.get("[data-cy=submit]").click();
+
+    cy.url().should("include", "/editor");
+  });
+
+  it("Publish Article negative test without body", () => {
+    cy.get("[data-cy=title]").type(title);
+    cy.get("[data-cy=description]").type(description);
+    cy.get("[data-cy=submit]").click();
+
+    cy.url().should("include", "/editor");
   });
 });
