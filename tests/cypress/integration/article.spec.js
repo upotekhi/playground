@@ -3,14 +3,17 @@ const faker = require("faker");
 const title = faker.lorem.words();
 const description = faker.lorem.sentence();
 const body = faker.lorem.paragraph();
+let token = "empty";
 
 describe("Existing Article page", () => {
   beforeEach(() => {
-    cy.login(Cypress.env("email"), Cypress.env("password"));
+    cy.login(Cypress.env("email"), Cypress.env("password")).then((resp) => {
+      token = resp.body.user.token;
+    });
   });
 
   it("Article can be deleted with banner button", () => {
-    cy.createArticle(title, description, body).then((resp) => {
+    cy.createArticle(title, description, body, token).then((resp) => {
       const slug = resp.body.article.slug;
 
       cy.visit(`/article/${slug}`);
@@ -21,7 +24,7 @@ describe("Existing Article page", () => {
   });
 
   it("Article can be deleted with page button", () => {
-    cy.createArticle(title, description, body).then((resp) => {
+    cy.createArticle(title, description, body, token).then((resp) => {
       const slug = resp.body.article.slug;
 
       cy.visit(`/article/${slug}`);
