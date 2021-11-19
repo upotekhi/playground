@@ -2,7 +2,7 @@ import * as faker from "faker";
 const title = faker.lorem.words();
 const description = faker.lorem.sentence();
 const body = faker.lorem.paragraph();
-let token = "empty";
+let token = "";
 
 describe("Existing Article page", () => {
   beforeEach(() => {

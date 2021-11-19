@@ -2,6 +2,7 @@
  [ngClass]="{ 'disabled' : isSubmitting,
               'btn-outline-primary': !article.favorited,
               'btn-primary': article.favorited }"
- (click)="toggleFavorite()">
+ (click)="toggleFavorite()"
+ data-cy="favorite">
   <i class="ion-heart"></i> <ng-content></ng-content>
 </button>

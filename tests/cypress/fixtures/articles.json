@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "slug": "test",
+      "title": "Test title",
+      "description": "Test description",
+      "body": "Test body",
+      "createdAt": "2000-12-30T12:34:56.123Z",
+      "updatedAt": "2000-12-30T12:34:56.123Z",
+      "tagList": ["one", "two"],
+      "author": {
+        "username": "test.user",
+        "bio": null,
+        "image": "https://api.realworld.io/images/smiley-cyrus.jpeg"
+      },
+      "comments": [],
+      "favoritesCount": 123,
+      "favorited": false
+    }
+  ],
+  "articlesCount": 1
+}

@@ -8,11 +8,11 @@
     </app-favorite-button>
   </app-article-meta>
 
-  <a [routerLink]="['/article', article.slug]" class="preview-link">
-    <h1>{{ article.title }}</h1>
-    <p>{{ article.description }}</p>
+  <a [routerLink]="['/article', article.slug]" class="preview-link" data-cy="link">
+    <h1 data-cy="title">{{ article.title }}</h1>
+    <p data-cy="description">{{ article.description }}</p>
     <span>Read more...</span>
-    <ul class="tag-list">
+    <ul class="tag-list" data-cy="tags">
       <li class="tag-default tag-pill tag-outline"
         *ngFor="let tag of article.tagList; trackBy: trackByFn">
         {{ tag }}
