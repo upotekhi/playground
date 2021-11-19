@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 describe("Sign in page", () => {
   beforeEach(() => {
     cy.visit("/login");

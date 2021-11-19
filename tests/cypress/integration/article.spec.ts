@@ -1,5 +1,4 @@
-/// <reference types="cypress" />
-const faker = require("faker");
+import * as faker from "faker";
 const title = faker.lorem.words();
 const description = faker.lorem.sentence();
 const body = faker.lorem.paragraph();
