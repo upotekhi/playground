@@ -27,6 +27,12 @@
   },
   "homepage": "https://github.com/upotekhi/playground#readme",
   "dependencies": {
-    "npm-run-all": "^4.1.5"
+    "cypress": "^9.2.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

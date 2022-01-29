@@ -1,0 +1,4 @@
+{
+  "baseUrl": "https://www.stealmylogin.com",
+  "testFiles": "**/*.{feature,features}"
+}
