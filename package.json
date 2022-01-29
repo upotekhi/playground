@@ -1,32 +1,15 @@
 {
-  "name": "playground",
+  "name": "codewars",
   "version": "1.0.0",
-  "description": "My JS playground",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/npm-run-all --serial be:preinstall fe:preinstall db:create --parallel be:start fe:start",
-    "test": "./node_modules/.bin/npm-run-all --serial db:seed cy:run db:drop",
-    "be:preinstall": "cd backend && npm i",
-    "fe:preinstall": "cd frontend && npm i",
-    "be:start": "npm run --prefix backend start",
-    "fe:start": "npm run --prefix frontend start",
-    "db:create": "npm run --prefix backend db:create",
-    "db:seed": "npm run --prefix backend db:seed",
-    "db:drop": "npm run --prefix backend db:drop",
-    "cy:run": "npm run --prefix tests cy:run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/upotekhi/playground.git"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/upotekhi/playground/issues"
-  },
-  "homepage": "https://github.com/upotekhi/playground#readme",
   "dependencies": {
-    "npm-run-all": "^4.1.5"
+    "jest": "^27.4.3"
   }
 }

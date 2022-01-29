@@ -1,1 +1,0 @@
-INSERT INTO `playground`.`users` (`email`, `username`, `password`) VALUES ('test@test.com', 'test.user', ?);
