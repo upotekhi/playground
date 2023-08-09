@@ -1,64 +1,23 @@
-# My JS/TS Playground
+# Component Testing with Cypress in React App
 
-Welcome to **My JS/TS Playground**! This repository is designed to serve as a versatile space for experimenting with JavaScript and TypeScript. The `master` branch is intentionally empty and serves as the starting point for creating various branches dedicated to different practices, projects, or experiments.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) using TypeScript.
 
-## Purpose
+## Available Scripts
 
-This repository is intended to be a safe space for you to:
+In the project directory, you can run:
 
-- Explore new JavaScript and TypeScript concepts.
-- Try out different coding techniques, libraries, and frameworks.
-- Build and test small projects and prototypes.
-- Collaborate with others by branching off for group activities.
+- `yarn start`: Run the app in development mode at [http://localhost:3000](http://localhost:3000). 🚀
 
-## Getting Started
+- `yarn test`: **Launch all levels of tests in interactive watch mode. Unit, integration, and end-to-end tests are mandatory to ensure comprehensive testing coverage.** Check [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more info. 🧪
 
-To start using this repository, follow these steps:
+- `yarn build`: Build the app for production to the `build` folder. It bundles React in production mode for optimal performance. 🛠️
 
-1. Clone this repository to your local machine.
-    ```
-    git clone https://github.com/your-username/your-repo-name.git
-    ```
+- `yarn cy:open`: Open Cypress, the end-to-end testing framework. Run functional tests interactively. 🕶️
 
-2. Create a new branch for your practice, project, or experiment. Choose a descriptive name that reflects the purpose of the branch.
-    ```
-    git checkout -b my-feature-branch
-    ```
+**Note: Eject is a one-way operation. Use it only if you're ready to customize build configuration.**
 
-3. Start coding! You can use any JavaScript or TypeScript features you'd like to experiment with. Feel free to add, modify, or remove files as needed.
+## Learn More
 
-4. Periodically commit your changes to your branch.
-    ```
-    git add .
-    git commit -m "Add initial code for my feature"
-    ```
+Explore the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-5. When you're ready, push your branch to the remote repository.
-    ```
-    git push origin my-feature-branch
-    ```
-
-## Branching Strategy
-
-This repository follows a branching strategy where the `master` branch is kept intentionally empty. Instead, individual branches are created for specific purposes, allowing you to maintain a clean and organized repository structure. Here are some guidelines for branching:
-
-- **master:** The main branch that serves as the starting point for new branches.
-- **my-feature-branch:** Replace with the name of your specific feature, practice, or project branch.
-
-Feel free to create and manage branches as needed for different activities.
-
-## Contribution
-
-Contributions to this repository are welcome! If you have an interesting experiment, practice, or project you'd like to share, you can:
-
-1. Fork this repository.
-2. Create a new branch on your fork.
-3. Add your changes and commit them.
-
-Please ensure your code is well-documented and follows best practices.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE), which means you're free to use, modify, and distribute the code for your own purposes.
-
-Happy coding!
+Learn React by referring to the [React documentation](https://reactjs.org/).
