@@ -1,64 +1,46 @@
-# My JS/TS Playground
+# Getting Started with Create React App
 
-Welcome to **My JS/TS Playground**! This repository is designed to serve as a versatile space for experimenting with JavaScript and TypeScript. The `master` branch is intentionally empty and serves as the starting point for creating various branches dedicated to different practices, projects, or experiments.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Purpose
+## Available Scripts
 
-This repository is intended to be a safe space for you to:
+In the project directory, you can run:
 
-- Explore new JavaScript and TypeScript concepts.
-- Try out different coding techniques, libraries, and frameworks.
-- Build and test small projects and prototypes.
-- Collaborate with others by branching off for group activities.
+### `yarn start`
 
-## Getting Started
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To start using this repository, follow these steps:
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-1. Clone this repository to your local machine.
-    ```
-    git clone https://github.com/your-username/your-repo-name.git
-    ```
+### `yarn test`
 
-2. Create a new branch for your practice, project, or experiment. Choose a descriptive name that reflects the purpose of the branch.
-    ```
-    git checkout -b my-feature-branch
-    ```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-3. Start coding! You can use any JavaScript or TypeScript features you'd like to experiment with. Feel free to add, modify, or remove files as needed.
+### `yarn build`
 
-4. Periodically commit your changes to your branch.
-    ```
-    git add .
-    git commit -m "Add initial code for my feature"
-    ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-5. When you're ready, push your branch to the remote repository.
-    ```
-    git push origin my-feature-branch
-    ```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Branching Strategy
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-This repository follows a branching strategy where the `master` branch is kept intentionally empty. Instead, individual branches are created for specific purposes, allowing you to maintain a clean and organized repository structure. Here are some guidelines for branching:
+### `yarn eject`
 
-- **master:** The main branch that serves as the starting point for new branches.
-- **my-feature-branch:** Replace with the name of your specific feature, practice, or project branch.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Feel free to create and manage branches as needed for different activities.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Contribution
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-Contributions to this repository are welcome! If you have an interesting experiment, practice, or project you'd like to share, you can:
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-1. Fork this repository.
-2. Create a new branch on your fork.
-3. Add your changes and commit them.
+## Learn More
 
-Please ensure your code is well-documented and follows best practices.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## License
-
-This repository is licensed under the [MIT License](LICENSE), which means you're free to use, modify, and distribute the code for your own purposes.
-
-Happy coding!
+To learn React, check out the [React documentation](https://reactjs.org/).
